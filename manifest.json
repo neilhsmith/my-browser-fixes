@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "My Broswer Bullshit",
+	"version": "1.0",
+
+	"description": "Dufucks and stuffS",
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.google.com/*"],
+			"js": ["src/hide-google-search-ai-section.js"]
+		},
+		{
+			"matches": ["*://*.reddit.com/*"],
+			"js": ["src/hide-reddit-cookie-banner.js"]
+		}
+	]
+}
